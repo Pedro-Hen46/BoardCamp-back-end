@@ -1,12 +1,12 @@
-import pkg from 'pg';
+import pgk from 'pg';
 
-const { Pool } = pg;
+const { Pool } = pgk;
 
 const connection = new Pool({
     host: 'localhost',
     port: 5432,
     user: 'postgres',
-    password: '123456',
+    password: 'admin',
     database: 'boardcamp',
 });
 
