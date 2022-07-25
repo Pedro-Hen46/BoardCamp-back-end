@@ -6,6 +6,7 @@ import chalk from "chalk";
 import categoriesRoute from "./routes/categoriesRoute.js";
 import gameRoute from "./routes/gameRouter.js";
 import customersRoute from "./routes/customersRoute.js";
+import rentalsRoute from './routes/rentalsRoute.js';
 
 dotenv.config();
 
@@ -20,9 +21,7 @@ const PORT = process.env.PORT;
 server.use(categoriesRoute);
 server.use(gameRoute);
 server.use(customersRoute);
-
-
-
+server.use(rentalsRoute)
 
 openServer();
 
